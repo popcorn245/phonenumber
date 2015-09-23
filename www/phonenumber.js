@@ -23,11 +23,9 @@ PhoneNumber._isFunction = function(f) {
 }
 
 //--------------------------------------
-if (!window.plugins)
-	window.plugins = {};
 
-if (!window.plugins.phonenumber)
-	window.plugins.phonenumber = new PhoneNumber();
+if (!window.PhoneNumber)
+	window.PhoneNumber = new PhoneNumber();
 
 if (module.exports)
 	module.exports = PhoneNumber;
